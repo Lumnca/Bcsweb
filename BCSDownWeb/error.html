@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>网站错误</title>
+<!-- custom-theme -->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="keywords" content="" />
+<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false);
+		function hideURLbar(){ window.scrollTo(0,1); } </script>
+<!-- //custom-theme -->
+<link rel="icon" href="images/bcs.png">
+<link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
+<link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
+<!-- js -->
+<script type="text/javascript" src="js/jquery-2.1.4.min.js"></script>
+<script type="text/javascript" src="js/echarts.js"></script>
+<script type="text/javascript" src="js/deal.js"></script>
+<script src="https://cdn.staticfile.org/vue/2.4.2/vue.min.js"></script>
+<script src="http://s1.bdstatic.com/r/www/cache/global/js/BaiduHttps_20150714_zhanzhang.js"></script>
+
+
+
+  <script src="https://cdn.staticfile.org/twitter-bootstrap/4.1.0/js/bootstrap.min.js"></script>
+<!-- //js -->
+<link rel="stylesheet" href="css/colorbox.css" />
+<!-- font-awesome-icons -->
+<link href="css/font-awesome.css" rel="stylesheet"> 
+<!-- //font-awesome-icons -->
+<link href="http://fonts.googleapis.com/css?family=Dosis:200,300,400,500,600,700,800&amp;subset=latin-ext" rel="stylesheet">
+<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic' rel='stylesheet' type='text/css'>
+</head>
+	
+<body>
+<!-- banner -->
+
+<!-- //banner -->
+<!-- icons -->
+<div class="container">
+    <br><h3 class="w3l_font">访问不存在或者服务器<span>错误--</span></h3><br>
+    <div class="row">
+        <div class="col-lg-1 col-md-1 col-sm-0 col-xs-0"></div>
+        <div class="col-lg-10  col-md-10   col-sm-12 col-xs-12 container">
+             <img src="images/error1.jpg" width="100%" onclick="alert('都说了没有了嘛！可能是你访问的的资源以及不存在或者服务器出错啦。')">
+        </div>   
+        <div class="col-lg-1  col-md-1 col-sm-0 col-xs-0"></div>    
+    </div>
+
+</div>
+<!-- //icons -->
+<!-- footer -->
+<div class="footer">
+		<div class="container">
+				<div class="col-md-4 w3layouts_footer_grid">
+				</div>
+				<div class="col-md-8 w3layouts_footer_grid">
+						<ul class="w3l_footer_nav">
+							<li><a href="index.html">主页</a></li>
+							<li><a href="services.html">事务</a></li>
+							<li><a href="study.html">学习资料</a></li>
+							<li><a href="data.html">功能平台</a></li>
+							<li><a href="mail.html">关于我们</a></li>
+						</ul>
+				</div>
+				<div class="clearfix button-text">
+					<h4>Copyright &copy; 2011-2019 BCS后端组     www.bcs-rear-end.com    All Rights Reserved          备案号 ： 蜀ICP备18031954号-1</h4>
+				</div>
+		</div>
+</div>
+<script src="js/talk.js"></script>
+<!-- //footer -->
+<!-- start-smoth-scrolling -->
+<script type="text/javascript" src="js/move-top.js"></script>
+<script type="text/javascript" src="js/easing.js"></script>
+<script type="text/javascript">
+	jQuery(document).ready(function($) {
+		$(".scroll").click(function(event){		
+			event.preventDefault();
+			$('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
+		});
+	});
+</script>
+<!-- start-smoth-scrolling -->
+<!-- for bootstrap working -->
+	<script src="js/bootstrap.js"></script>
+<!-- //for bootstrap working -->
+<!-- here stars scrolling icon -->
+    <script type="text/javascript">
+    	function checkHttps() {
+				BaiduHttps.useHttps();
+			};
+			function baiduWithHttps(formname) {
+					var data = BaiduHttps.useHttps();
+					if (data.s === 0) {
+							return true;
+					} else {
+							formname.action = 'https://www.baidu.com/baidu' + '?ssl_s=1&ssl_c' + data.ssl_code;
+							return true;
+					}
+			};
+		$(document).ready(function() {
+			/*
+				var defaults = {
+				containerID: 'toTop', // fading element id
+				containerHoverID: 'toTopHover', // fading element hover id
+				scrollSpeed: 1200,
+				easingType: 'linear' 
+				};
+		*/
+								
+			$().UItoTop({ easingType: 'easeOutQuart' });					
+			});
+    </script>
+<!-- //here ends scrolling icon -->
+</body>
+</html>

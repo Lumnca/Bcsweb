@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>管理登录</title>
+<!-- custom-theme -->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="keywords" content="" />
+<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false);
+		function hideURLbar(){ window.scrollTo(0,1); } </script>
+<!-- //custom-theme -->
+<link rel="icon" href="images/bcs.png">
+<link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
+<link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
+<!-- js -->
+<script type="text/javascript" src="js/jquery-2.1.4.min.js"></script>
+<script type="text/javascript" src="js/echarts.js"></script>
+<script type="text/javascript" src="js/deal.js"></script>
+<script src="http://s1.bdstatic.com/r/www/cache/global/js/BaiduHttps_20150714_zhanzhang.js"></script>
+<!-- //js -->
+<link rel="stylesheet" href="css/colorbox.css" />
+<!-- font-awesome-icons -->
+<link href="css/font-awesome.css" rel="stylesheet"> 
+<!-- //font-awesome-icons -->
+<link href="http://fonts.googleapis.com/css?family=Dosis:200,300,400,500,600,700,800&amp;subset=latin-ext" rel="stylesheet">
+<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic' rel='stylesheet' type='text/css'>
+</head>
+	
+<body>
+<!-- banner -->
+<div class="banner4">
+	<div class="w3_agile_banner_top">
+		<div class="agile_phone_mail">
+			<ul>
+					<li><i class="fa fa-user" aria-hidden="true"></i><a href="login.html">未登录</a></li>
+					<li><i class="fa fa-sign-out" aria-hidden="true"></i><a href="#">退出登录</a></li>
+					<li><i class="fa fa-location-arrow" aria-hidden="true"></i><a href="infor.html">导航</a></li>		
+			</ul>
+		</div>
+	</div>
+	<div class="agileits_w3layouts_banner_nav">
+		<nav class="navbar navbar-default">
+			<div class="navbar-header navbar-left">
+				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+					<span class="sr-only">Toggle navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				<h1><a class="navbar-brand" href="index.html"><i>IT</i>Bcs后端组<span></span></a></h1>
+			</div>
+			<!-- Collect the nav links, forms, and other content for toggling -->
+			<div class="collapse navbar-collapse navbar-right" id="bs-example-navbar-collapse-1">
+				<nav class="menu--iris">
+					<ul class="nav navbar-nav menu__list">
+						<li class="menu__item"><a href="index.html" class="menu__link">首页</a></li>
+						<li class="menu__item"><a href="services.html" class="menu__link">事务</a></li>
+						<li class="menu__item "><a href="study.html" class="menu__link">学习链接</a></li>
+						<li class="dropdown menu__item">
+							<a href="#" class="dropdown-toggle menu__link" data-toggle="dropdown">功能平台<b class="caret"></b></a>
+							<ul class="dropdown-menu agile_short_dropdown">
+									<li><a href="data.html">数据统计</a></li>
+									<li><a href="file.html">资源分享</a></li>
+									<li><a href="talk.html">讨论区</a></li>
+									<li><a href="work.html">任务提交</a></li>
+							</ul>
+						</li>
+						<li class="menu__item  "><a href="mail.html" class="menu__link">关于我们</a></li>
+					</ul>
+					<div class="w3_agileits_search">
+							<form action="http://www.baidu.com/baidu" onsubmit="return baiduWithHttps(this)" target="_blank">
+								<input type="text" name="word" placeholder="Search..." required="" onfocus="checkHttps">
+								<input type="submit" value="">
+						</form>
+					</div>
+				</nav>
+			</div>
+		</nav>
+	</div>
+	<div class="w3_agileits_service_banner_info">
+		<h2>管理登录</h2>
+	</div>
+</div>
+<!-- //banner -->
+<!-- icons -->
+	<div class="services">
+		<div class="container">
+			<h3 class="w3l_header">管理员<span>登录</span></h3><br>
+			<div class="col-lg-4 col-md-1"></div>
+            <div class="col-lg-4 col-md-10" id="loginstyle">			
+                <form class="form-signin" action="#" method="GET">
+                    <div class="text-center mb-4">
+                        <img class="mb-4" src="images/logn.png"  alt="">
+                        <br><div>
+                            <span><i class="fa fa-meh-o"></i><b id="logintext">小小网站就不要攻击我了嘛</b></span>
+                        </div><br>
+                    </div>
+                    <div class="form-label-group">
+                        <label for="user">管理员ID</label>
+                        <input type="text" id="user" class="form-control" placeholder="账号"  onfocusin="focusFunction()" onfocusout="blurFunction()">                               
+                    </div>
+                    <div class="form-label-group">
+                        <label for="pwd">密码</label>
+                        <input type="password" id="pwd" class="form-control" placeholder="密码"  onfocusin="focusFunction()" onfocusout="blurFunction()">
+                    </div>
+                    <br>
+                    <div class="form-label-group container">
+						<input type="submit" class="btn btn-primary" value="确认登录">
+					</div>
+                </form>
+			</div>
+			<div class="col-lg-4 col-md-1"></div>
+        </div>
+	</div>
+<!-- //icons -->
+<!-- footer -->
+<div class="footer">
+		<div class="container">
+				<div class="col-md-4 w3layouts_footer_grid">
+				</div>
+				<div class="col-md-8 w3layouts_footer_grid">
+						<ul class="w3l_footer_nav">
+								<li><a href="index.html">主页</a></li>
+								<li><a href="services.html">事务</a></li>
+								<li><a href="study.html">学习资料</a></li>
+								<li><a href="data.html" class="active">功能平台</a></li>
+								<li><a href="mail.html">关于我们</a></li>
+						</ul>
+				</div>
+				<div class="clearfix button-text">
+					<h4>Copyright &copy; 2011-2019 BCS后端组     www.bcs-rear-end.com    All Rights Reserved          备案号 ： 蜀ICP备18031954号-1</h4>
+				</div>
+		</div>
+</div>
+<!-- //footer -->
+<!-- start-smoth-scrolling -->
+<script type="text/javascript" src="js/move-top.js"></script>
+<script type="text/javascript" src="js/easing.js"></script>
+<script type="text/javascript">
+	jQuery(document).ready(function($) {
+		$(".scroll").click(function(event){		
+			event.preventDefault();
+			$('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
+		});
+	});
+</script>
+<!-- start-smoth-scrolling -->
+<!-- for bootstrap working -->
+	<script src="js/bootstrap.js"></script>
+<!-- //for bootstrap working -->
+<!-- here stars scrolling icon -->
+    <script type="text/javascript">
+    	function checkHttps() {
+				BaiduHttps.useHttps();
+			};
+			function baiduWithHttps(formname) {
+					var data = BaiduHttps.useHttps();
+					if (data.s === 0) {
+							return true;
+					} else {
+							formname.action = 'https://www.baidu.com/baidu' + '?ssl_s=1&ssl_c' + data.ssl_code;
+							return true;
+					}
+            };
+
+        
+            function focusFunction() {
+                var idtext = document.getElementById("logintext");
+                idtext.innerHTML="我正在监视你输入";
+            }
+            // 失去焦点
+            function blurFunction() {
+                var idtext = document.getElementById("logintext");
+                idtext.innerHTML="你做的一切我都看到了";
+            }
+
+
+
+		$(document).ready(function() {
+			/*
+				var defaults = {
+				containerID: 'toTop', // fading element id
+				containerHoverID: 'toTopHover', // fading element hover id
+				scrollSpeed: 1200,
+				easingType: 'linear' 
+				};
+		*/
+								
+			$().UItoTop({ easingType: 'easeOutQuart' });					
+			});
+    </script>
+<!-- //here ends scrolling icon -->
+</body>
+</html>

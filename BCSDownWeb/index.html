@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Home</title>
+<!-- custom-theme -->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="keywords" content="" />
+<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false);
+		function hideURLbar(){ window.scrollTo(0,1); } </script>
+<!-- //custom-theme -->
+<link rel="icon" href="images/bcs.png">
+<link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
+<link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
+<!-- js -->
+<script rel="stylesheet" src="js/jquery-2.1.4.min.js"></script>
+<!-- //js -->
+<link rel="stylesheet" href="css/flexslider.css" type="text/css" media="screen" property="" />
+<!-- font-awesome-icons -->
+<link href="css/font-awesome.css" rel="stylesheet"> 
+<link href="css/style2.css" rel="stylesheet">
+<script src="js/jquery-1.7.2.min.js" rel="stylesheet" ></script>
+
+<script src="https://cdn.staticfile.org/vue/2.4.2/vue.min.js"></script>
+<script src="http://s1.bdstatic.com/r/www/cache/global/js/BaiduHttps_20150714_zhanzhang.js"></script>
+<!-- //font-awesome-icons -->
+<link href="http://fonts.googleapis.com/css?family=Dosis:200,300,400,500,600,700,800&amp;subset=latin-ext" rel="stylesheet">
+<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic' rel='stylesheet' type='text/css'>
+</head>
+
+<body>
+<!-- banner -->
+<div class="banner">
+		<div class="w3_agile_banner_top">
+				<div class="agile_phone_mail">
+						<ul>
+								<li><i class="fa fa-thumbs-up" aria-hidden="true"></i><a href="" data-toggle="modal" data-target="#good">点赞</a></li>
+								<li><i class="fa fa-user" aria-hidden="true"></i><a href="login.html">未登录</a></li>
+								<li><i class="fa fa-sign-out" aria-hidden="true"></i><a href="#">退出登录</a></li>
+								<li><i class="fa fa-location-arrow" aria-hidden="true"></i><a href="infor.html">导航</a></li>		
+						</ul>
+				</div>
+		</div>
+		<div class="agileits_w3layouts_banner_nav">
+				<nav class="navbar navbar-default">
+						<div class="navbar-header navbar-left">
+								<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+										<span class="sr-only">Toggle navigation</span>
+										<span class="icon-bar"></span>
+										<span class="icon-bar"></span>
+										<span class="icon-bar"></span>
+								</button>
+								<h1><a class="navbar-brand" href="index.html"><i>V</i><span>BCS后端组</span></a></h1>
+						</div>
+						<!-- Collect the nav links, forms, and other content for toggling -->
+						<div class="collapse navbar-collapse navbar-right" id="bs-example-navbar-collapse-1">
+								<nav class="menu--iris">
+										<ul class="nav navbar-nav menu__list">
+												<li class="menu__item menu__item--current"><a href="index.html" class="menu__link">主页</a></li>
+												<li class="menu__item"><a href="services.html" class="menu__link">事务</a></li>
+												<li class="menu__item"><a href="study.html" class="menu__link">学习资料</a></li>
+												<li class="dropdown menu__item">
+														<a href="data.html" class="dropdown-toggle menu__link" data-toggle="dropdown">功能平台<b class="caret"></b></a>
+														<ul class="dropdown-menu agile_short_dropdown">
+																<li><a href="data.html">数据统计</a></li>
+																<li><a href="file.html">资源分享</a></li>
+																<li><a href="talk.html">讨论区</a></li>
+																<li><a href="work.html">任务提交</a></li>
+														</ul>
+												</li>
+												<li class="menu__item"><a href="mail.html" class="menu__link">关于我们</a></li>
+										</ul>
+										<div class="w3_agileits_search">
+												<form action="http://www.baidu.com/baidu" onsubmit="return baiduWithHttps(this)" target="_blank">
+													<input type="text" name="word" placeholder="Search..." required="" onfocus="checkHttps">
+													<input type="submit" value="">
+												</form>
+										</div>
+								</nav>
+						</div>
+				</nav>
+		</div>
+		<div class="wthree_banner_info">
+				<h2>
+						<span>BCS’ s Web</span>Backend Technology Developer Alliance, Service Oriented Programming
+						of man
+				</h2>
+				<div class="agileinfo_more" id="app">
+						<a class="link link--kumya" data-toggle="modal" data-target="#myModal" v-on:click="change">
+							<span data-letters="">{{name}}</span>
+						</a>
+				</div>
+		</div>
+</div>
+<script>
+		function checkHttps() {
+				BaiduHttps.useHttps();
+		};
+		function baiduWithHttps(formname) {
+				var data = BaiduHttps.useHttps();
+				if (data.s === 0) {
+						return true;
+				} else {
+						formname.action = 'https://www.baidu.com/baidu' + '?ssl_s=1&ssl_c' + data.ssl_code;
+						return true;
+				}
+		};
+		var app = new Vue({
+				el: '#app',
+				data: {
+						name: "访问量:5569",
+						flag: false
+				},
+				methods: {
+						change: function (event) {
+								if (!this.flag) {
+										this.name = "要求已更新"
+										this.flag = true
+								}
+								else {
+										this.name = "访问量:5578"
+										this.flag = false
+								}
+						}
+				}
+		})
+</script>
+
+
+<div class="modal video-modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModal">
+		<div class="modal-dialog" role="document">
+				<div class="modal-content">
+						<div class="modal-header">
+								小工具
+								<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+						</div>
+						<section>
+								<div class="modal-body">
+										<a href="typography.html">前端样式整合</a><br /><br />
+										<a href="icons.html">前端图标整合</a><br /><br />
+										<a href="http://html5.huceo.com/leidiandz.html">打印文字</a><br /><br />
+										<i>
+											时间:2019/4/1
+										</i>
+								</div>
+						</section>
+				</div>
+		</div>
+</div>
+
+<div class="modal video-modal fade" id="good" tabindex="-1" role="dialog" aria-labelledby="good">
+		<div class="modal-dialog" role="document">
+				<div class="modal-content">
+						<div class="modal-header">
+								站点提示
+								<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+						</div>
+						<section>
+								<div class="modal-body">
+									<br><p class="w3l_font">感谢您的支持，我们会加油做的更好的!</p>
+								</div>
+						</section>
+				</div>
+		</div>
+</div>
+
+
+
+<div class="banner-bottom">
+		<div class="container">
+				<h3 style="font-size:1.5em"><span>文章</span> 每隔一段时间会推送一些<span class="fixed_w3">技术及网络杂文</span></h3>
+				<div class="agileits_banner_bottom_grids">
+						<div class="col-md-3 agileits_banner_bottom_grid">
+								<a href="https://mp.weixin.qq.com/s/reQ78ox1pQTtvkodxmajFQ" target="_blank">
+										<div class="hovereffect w3ls_banner_bottom_grid">
+												<img src="images/code.jpg" alt=" " class="img-responsive" />
+												<div class="overlay">
+														<h4>前端开发</h4>
+														<p>给前端开发的6点建议</p>
+												</div>
+										</div>
+								</a>
+						</div>
+						<div class="col-md-3 col-sm-10 col-xs-10 agileits_banner_bottom_grid">
+								<a href="https://mp.weixin.qq.com/s/2GjZFQEiCpnK_VsucgqtVQ" target="_blank">
+										<div class="hovereffect w3ls_banner_bottom_grid">
+												<img src="images/setting.jpg" alt=" " class="img-responsive" />
+												<div class="overlay">
+														<h4>Linux学习</h4>
+														<p>测试工程师5大核心能力详解</p>
+												</div>
+										</div>
+								</a>
+						</div>
+						<div class="col-md-3 agileits_banner_bottom_grid">
+								<a href="https://mp.weixin.qq.com/s/UkxWbu20Oxe3v7qYoSMOCA" target="_blank">
+										<div class="hovereffect w3ls_banner_bottom_grid">
+												<img src="images/anquan.jpg" alt=" " class="img-responsive" />
+												<div class="overlay">
+														<h4>网络安全</h4>
+														<p>什么是HTTPS协议</p>
+												</div>
+										</div>
+								</a>
+						</div>
+						<div class="col-md-3 agileits_banner_bottom_grid">
+								<a href="https://segmentfault.com/a/1190000017483325" target="_blank">
+										<div class="hovereffect w3ls_banner_bottom_grid">
+												<img src="images/test.jpg" alt=" " class="img-responsive" />
+												<div class="overlay">
+														<h4>前端开发</h4>
+														<p>Web开发技术趋势与指南</p>
+												</div>
+										</div>
+								</a>
+						</div>
+						<div class="clearfix"> </div>
+				</div>
+		</div>
+		
+</div>
+
+
+<div class="colorlib-services colorlib-bg-white index-view">
+		<div class="container">
+				<hr>
+				<h3 style="font-size:1.5em;text-align: center"><span style="color:#1a60ca">后端</span>技术<span style="color:#922280">学习</span></h3>
+				<div class="row">
+						<div class="col-md-4 text-center animate-box">
+								<div class="services">
+										<span class="icon">
+												<img src="images/bare_maetal.png" width="80" height="80" />
+										</span>
+										<div class="desc">
+												<h3>Web 后端工程师</h3><br />
+												<p>数据逻辑存储（数据库、redis等），复杂逻辑的设计（如权限控制、前端数据交互、配置信息、路由等等）数据交互 展现</p>
+										</div>
+								</div>
+						</div>
+						<div class="col-md-4 text-center animate-box">
+								<div class="services">
+										<span class="icon">
+												<img src="images/VDC.png" width="80" height="80" />
+										</span>
+										<div class="desc">
+												<h3>云上计算 分布式系统</h3><br />
+												<p>分布式系统是一个硬件或软件组件分布在不同的网络计算机上，彼此之间仅仅通过消息传递进行通信和协调的系统。</p>
+										</div>
+								</div>
+						</div>
+						<div class="col-md-4 text-center animate-box">
+								<div class="services">
+										<span class="icon">
+												<img src="images/storage.png" width="80" height="80" />
+										</span>
+										<div class="desc">
+												<h3>数据库集群 读写分离</h3><br />
+												<p>大规模读写业务,大型网站必需技术,支撑各种复杂业务</p>
+										</div>
+								</div>
+						</div>
+				</div>
+		</div>
+</div>
+<div class="footer">
+		<div class="container">
+				<div class="col-md-4 w3layouts_footer_grid">
+				</div>
+				<div class="col-md-8 w3layouts_footer_grid">
+						<ul class="w3l_footer_nav">
+								<li><a href="index.html" class="active">主页</a></li>
+								<li><a href="services.html">事务</a></li>
+								<li><a href="study.html">学习资料</a></li>
+								<li><a href="data.html">功能平台</a></li>
+								<li><a href="mail.html">简介</a></li>
+						</ul>
+				</div>
+				<div class="clearfix button-text">
+					<h4>Copyright &copy; 2011-2019 BCS后端组     www.bcs-rear-end.com    All Rights Reserved          备案号 ： 蜀ICP备18031954号-1</h4>
+				</div>
+		</div>
+</div>
+<!-- //footer -->
+<!-- start-smoth-scrolling -->
+<script src="js/move-top.js"></script>
+<script src="js/easing.js"></script>
+<script type="text/javascript">
+		jQuery(document).ready(function ($) {
+				$(".scroll").click(function (event) {
+						event.preventDefault();
+						$('html,body').animate({ scrollTop: $(this.hash).offset().top }, 1000);
+				});
+		});
+</script>
+<!-- start-smoth-scrolling -->
+<!-- for bootstrap working -->
+<script src="js/bootstrap.js"></script>
+<!-- //for bootstrap working -->
+<!-- here stars scrolling icon -->
+<script type="text/javascript">
+		$(document).ready(function () {
+				/*
+						var defaults = {
+						containerID: 'toTop', // fading element id
+						containerHoverID: 'toTopHover', // fading element hover id
+						scrollSpeed: 1200,
+						easingType: 'linear'
+						};
+				*/
+				$().UItoTop({ easingType: 'easeOutQuart' });
+		});
+</script>
+<!-- //here ends scrolling icon -->
+</body>
+</html>

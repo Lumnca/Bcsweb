@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>数据统计</title>
+<!-- custom-theme -->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="keywords" content="" />
+<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false);
+		function hideURLbar(){ window.scrollTo(0,1); } </script>
+<!-- //custom-theme -->
+<link rel="icon" href="images/bcs.png">
+<link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
+<link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
+<!-- js -->
+<script type="text/javascript" src="js/jquery-2.1.4.min.js"></script>
+<script type="text/javascript" src="js/echarts.js"></script>
+<script type="text/javascript" src="js/deal.js"></script>
+<script src="http://s1.bdstatic.com/r/www/cache/global/js/BaiduHttps_20150714_zhanzhang.js"></script>
+<!-- //js -->
+<link rel="stylesheet" href="css/colorbox.css" />
+
+<link rel="stylesheet" href="css/peoinfostyle.css">
+<!-- font-awesome-icons -->
+<link href="css/font-awesome.css" rel="stylesheet"> 
+<!-- //font-awesome-icons -->
+<link href="http://fonts.googleapis.com/css?family=Dosis:200,300,400,500,600,700,800&amp;subset=latin-ext" rel="stylesheet">
+<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic' rel='stylesheet' type='text/css'>
+</head>
+	
+<body>
+<!-- banner -->
+<div class="banner5">
+	<div class="w3_agile_banner_top">
+		<div class="agile_phone_mail">
+			<ul>
+				<li><i class="fa fa-user" aria-hidden="true"></i><a href="login.html">未登录</a></li>
+				<li><i class="fa fa-sign-out" aria-hidden="true"></i><a href="#">退出登录</a></li>
+				<li><i class="fa fa-location-arrow" aria-hidden="true"></i><a href="infor.html">导航</a></li>	
+			</ul>
+		</div>
+	</div>
+	<div class="agileits_w3layouts_banner_nav">
+		<nav class="navbar navbar-default">
+			<div class="navbar-header navbar-left">
+				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+					<span class="sr-only">Toggle navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				<h1><a class="navbar-brand" href="index.html"><i>IT</i>Bcs后端组<span></span></a></h1>
+			</div>
+			<!-- Collect the nav links, forms, and other content for toggling -->
+			<div class="collapse navbar-collapse navbar-right" id="bs-example-navbar-collapse-1">
+				<nav class="menu--iris">
+					<ul class="nav navbar-nav menu__list">
+						<li class="menu__item"><a href="index.html" class="menu__link">首页</a></li>
+						<li class="menu__item"><a href="services.html" class="menu__link">事务</a></li>
+						<li class="menu__item "><a href="study.html" class="menu__link">学习链接</a></li>
+						<li class="dropdown menu__item">
+							<a href="#" class="dropdown-toggle menu__link" data-toggle="dropdown">功能平台<b class="caret"></b></a>
+							<ul class="dropdown-menu agile_short_dropdown menu__item--current">
+									<li><a href="data.html">数据统计</a></li>
+									<li><a href="file.html">资源分享</a></li>
+									<li><a href="talk.html">讨论区</a></li>
+									<li><a href="work.html">任务提交</a></li>
+							</ul>
+						</li>
+						<li class="menu__item  "><a href="mail.html" class="menu__link">关于我们</a></li>
+					</ul>
+					<div class="w3_agileits_search">
+							<form action="http://www.baidu.com/baidu" onsubmit="return baiduWithHttps(this)" target="_blank">
+								<input type="text" name="word" placeholder="Search..." required="" onfocus="checkHttps">
+								<input type="submit" value="">
+						</form>
+					</div>
+				</nav>
+			</div>
+		</nav>
+	</div>
+	<div class="w3_agileits_service_banner_info">
+		<h2>数据统计</h2>
+	</div>
+</div>
+<!-- //banner -->
+<!-- icons -->
+<div class="services">
+		<div class="container">
+            <h3 class="w3l_header ">培训<span>统计</span></h3><br>
+            <br><p class="w3l_font">培训进度</p>
+            <div class="progress progress-striped active">
+                <div class="progress-bar progress-bar-primary" style="width:37.5%">6/16</div>
+			</div>
+			<div class="table-responsive">
+				<br><p class="w3l_font">培训日程</p>
+				<table class="table table-bordered ">
+					<thead>
+						<tr>
+							<th>周五晚上</th>
+							<th>第一周</th>
+							<th>第二周</th>
+							<th>第三周</th>
+							<th>第四周</th>
+							<th>第五周</th>
+							<th>第六周</th>
+							<th>第七周</th>
+							<th>第八周</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td class="">内容</td>
+							<td class="danger"><i class="fa fa-times-circle">&nbsp;无培训</i></td>
+							<td class="success"><i class="fa fa-check-circle-o">&nbsp;Html</i></td>
+							<td class="success"><i class="fa fa-check-circle-o">&nbsp;Css</i></td>	
+							<td class="danger"><i class="fa fa-times-circle">&nbsp;无培训</i></td>
+							<td class="success"><i class="fa fa-check-circle-o">&nbsp;javascript</i></td>	
+							<td class="success"><i class="fa fa-check-circle-o">&nbsp;javascript</i></td>	
+							<td class="info"><i class="fa fa-clock-o">&nbsp;未开始</i></td>
+							<td class="info"><i class="fa fa-clock-o">&nbsp;未开始</i></td>
+						</tr>
+						<tr>
+							<th>周日下午</th>
+							<th>第一周</th>
+							<th>第二周</th>
+							<th>第三周</th>
+							<th>第四周</th>
+							<th>第五周</th>
+							<th>第六周</th>
+							<th>第七周</th>
+							<th>第八周</th>
+						</tr>
+						<tr>
+							<td class="">内容</td>
+							<td class="danger"><i class="fa fa-times-circle">&nbsp;无培训</i></td>
+							<td class="success"><i class="fa fa-check-circle-o">&nbsp;C++</i></td>
+							<td class="success"><i class="fa fa-check-circle-o">&nbsp;C++</i></td>	
+							<td class="danger"><i class="fa fa-times-circle">&nbsp;无培训</i></td>
+							<td class="success"><i class="fa fa-check-circle-o">&nbsp;C++</i></td>	
+							<td class="success"><i class="fa fa-check-circle-o">&nbsp;C++</i></td>	
+							<td class="info"><i class="fa fa-clock-o">&nbsp;未开始</i></td>
+							<td class="info"><i class="fa fa-clock-o">&nbsp;未开始</i></td>
+						</tr>
+						<tr>
+							<th>周五晚上</th>
+							<th>第九周</th>
+							<th>第十周</th>
+							<th>第十一周</th>
+							<th>第十二周</th>
+							<th>第十三周</th>
+							<th>第十四周</th>
+							<th>第十五周</th>
+							<th>第十六周</th>
+						</tr>
+						<tr>
+							<td class="">内容</td>
+							<td class="info"><i class="fa fa-clock-o">&nbsp;未开始</i></td>
+							<td class="info"><i class="fa fa-clock-o">&nbsp;未开始</i></td>
+							<td class="info"><i class="fa fa-clock-o">&nbsp;未开始</i></td>
+							<td class="info"><i class="fa fa-clock-o">&nbsp;未开始</i></td>
+							<td class="info"><i class="fa fa-clock-o">&nbsp;未开始</i></td>
+							<td class="info"><i class="fa fa-clock-o">&nbsp;未开始</i></td>
+							<td class="info"><i class="fa fa-clock-o">&nbsp;未开始</i></td>
+							<td class="info"><i class="fa fa-clock-o">&nbsp;未开始</i></td>
+						</tr>
+						<tr>
+							<th>周日下午</th>
+							<th>第九周</th>
+							<th>第十周</th>
+							<th>第十一周</th>
+							<th>第十二周</th>
+							<th>第十三周</th>
+							<th>第十四周</th>
+							<th>第十五周</th>
+							<th>第十六周</th>
+						</tr>
+						<tr>
+							<td class="">内容</td>
+							<td class="info"><i class="fa fa-clock-o">&nbsp;未开始</i></td>
+							<td class="info"><i class="fa fa-clock-o">&nbsp;未开始</i></td>
+							<td class="info"><i class="fa fa-clock-o">&nbsp;未开始</i></td>
+							<td class="info"><i class="fa fa-clock-o">&nbsp;未开始</i></td>
+							<td class="info"><i class="fa fa-clock-o">&nbsp;未开始</i></td>
+							<td class="info"><i class="fa fa-clock-o">&nbsp;未开始</i></td>
+							<td class="info"><i class="fa fa-clock-o">&nbsp;未开始</i></td>
+							<td class="info"><i class="fa fa-clock-o">&nbsp;未开始</i></td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+			<br><p class="w3l_font">培训内容</p>
+			<div class="row">
+				<div class="yuan col-lg-6 col-md-12 col-sm-10 col-xs-10" style="border-right:none;overflow:auto;"></div>
+				<div class="yuan col-lg-6 col-md-12 col-sm-10 col-xs-10" style="overflow:auto;"></div>
+			</div><br><hr>
+
+
+			<!-------------------------------------------------->
+			<br><h3 class="w3l_header ">人员<span>统计</span></h3><br>
+			<p class="w3l_font">核心成员</p><br>
+			<div class="panel-group peotext" id="accordion">
+					<div class="panel panel-success ">
+						<div class="panel-heading">
+							<h4 class="panel-title">
+								<span> <h4 class="glyphicon glyphicon-list xa" flag="false"> </h4> </span>
+								<a data-toggle="collapse" data-parent="#accordion" class="hover-underline-animation"
+								   href="#collapseOne"  onclick="changexa(0)">
+								   2016届成员
+								</a>								
+							</h4>
+						</div>
+						<div id="collapseOne" class="panel-collapse collapse in">
+							<div class="row">
+								<div class="card container">
+									<div class="card-body">
+										<div class="mainpeo col-lg-4">
+											<div data-toggle="tooltip" title="核心灵魂级人物">
+												<span><h2 class="fa fa-user"></h2></span>
+												<h2>蒋星</h2>
+											</div>
+										</div>	
+										<div class="peoinfo col-lg-4">
+											<div data-toggle="tooltip" title="学姐中的大佬">
+												<span><h2 class="fa fa-user"></h2></span>
+												<h2>涂梦婷</h2>
+											</div>
+											
+										</div>
+										<div class="peoinfo col-lg-4">
+											<div  data-toggle="tooltip" title="搞笑的学长">
+												<span><h2 class="fa fa-user"></h2></span>
+												<h2>李志明</h2>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="panel panel-default">
+						<div class="panel-heading">
+							<h4 class="panel-title">
+								<span> <h4 class=" glyphicon glyphicon-list xa" flag="false"> </h4> </span>
+								<a data-toggle="collapse" data-parent="#accordion" class="hover-underline-animation"
+								   href="#collapseTwo"  onclick="changexa(1)">
+								   2017届成员
+								</a>
+							</h4>
+						</div>
+						<div id="collapseTwo" class="panel-collapse collapse in">
+								<div class="row">
+										<div class="card container">
+											<div class="card-body">
+												<div class="mainpeo col-lg-3">
+													<div data-toggle="tooltip" title="现任组长">
+														<span><h2 class="fa fa-user"></h2></span>
+														<h2 class="mainpeo">刘闽川</h2>
+													</div>
+												</div>	
+												<div class="peoinfo col-lg-3">
+													<div data-toggle="tooltip" title="我们的负责人同志">
+														<span><h2 class="fa fa-user"></h2></span>
+														<h2>范茂伟</h2>
+													</div>
+													
+												</div>
+												<div class="peoinfo col-lg-3">
+													<div  data-toggle="tooltip" title="正在起航的学长">
+														<span><h2 class="fa fa-user"></h2></span>
+														<h2>李云祥</h2>
+													</div>
+												</div>
+												<div class="peoinfo col-lg-3">
+														<div  data-toggle="tooltip" title="也是很优秀的学长">
+															<span><h2 class="fa fa-user"></h2></span>
+															<h2>周旭</h2>
+														</div>
+												</div>
+											</div>
+											<hr><hr><hr>
+											<div class="containe">											
+													<div class="peoinfo col-lg-2">
+														<div data-toggle="tooltip" title="这个人很懒什么都没有留下">
+															<span><h2 class="fa fa-user"></h2></span>
+															<h3>刘壮</h3>
+														</div>
+													</div>	
+													<div class="peoinfo col-lg-2">
+														<div data-toggle="tooltip" title="这个人很懒什么都没有留下">
+															<span><h2 class="fa fa-user"></h2></span>
+															<h3>罗欢</h3>
+														</div>
+														
+													</div>
+													<div class="peoinfo col-lg-2">
+														<div  data-toggle="tooltip" title="这个人很懒什么都没有留下">
+															<span><h2 class="fa fa-user"></h2></span>
+															<h3>唐瑞雪</h3>
+														</div>
+													</div>
+													<div class="peoinfo col-lg-2">
+															<div  data-toggle="tooltip" title="这个人很懒什么都没有留下">
+																<span><h2 class="fa fa-user"></h2></span>
+																<h3>邓欣怡</h3>
+															</div>
+													</div>
+													<div class="peoinfo col-lg-2">
+															<div  data-toggle="tooltip" title="这个人很懒什么都没有留下">
+																<span><h2 class="fa fa-user"></h2></span>
+																<h3>李其芳</h3>
+															</div>
+													</div>
+													<div class="peoinfo col-lg-2">
+															<div  data-toggle="tooltip" title="这个人很懒什么都没有留下">
+																<span><h2 class="fa fa-user"></h2></span>
+																<h3>魏青锦</h3>
+															</div>
+													</div>
+												</div>											
+										</div>
+								</div>
+						</div>
+					</div>
+					<div class="panel panel-info">
+						<div class="panel-heading">
+							<h4 class="panel-title">
+								<span> <h4 class=" glyphicon glyphicon-list xa" flag="false"> </h4> </span>
+								<a data-toggle="collapse" data-parent="#accordion" class="hover-underline-animation"
+								   href="#collapseThree"  onclick="changexa(2)">
+								   2018届成员
+								</a>
+							</h4>
+						</div>
+						<div id="collapseThree" class="panel-collapse collapse">
+							<div class="panel-body">
+								暂时还没有登记你们哟！
+							</div>
+						</div>
+					</div><hr>
+			</div> 
+			<!-------------------------------------->
+			<p class="w3l_font">小组成员</p><br>
+			<div class="container peoto"></div>
+
+			<!------------->
+		</div>
+	</div>
+<script src="js/datat.js"></script>
+<script src="js/main.js"></script>
+<!-- //icons -->
+<!-- footer -->
+<div class="footer">
+		<div class="container">
+				<div class="col-md-4 w3layouts_footer_grid">
+				</div>
+				<div class="col-md-8 w3layouts_footer_grid">
+						<ul class="w3l_footer_nav">
+								<li><a href="index.html">主页</a></li>
+								<li><a href="services.html">事务</a></li>
+								<li><a href="study.html">学习资料</a></li>
+								<li><a href="login" class="active">功能平台</a></li>
+								<li><a href="mail.html">关于我们</a></li>
+						</ul>
+				</div>
+				<div class="clearfix button-text">
+					<h4>Copyright &copy; 2011-2019 BCS后端组     www.bcs-rear-end.com    All Rights Reserved          备案号 ： 蜀ICP备18031954号-1</h4>
+				</div>
+		</div>
+</div>
+<!-- //footer -->
+<!-- start-smoth-scrolling -->
+<script type="text/javascript" src="js/move-top.js"></script>
+<script type="text/javascript" src="js/easing.js"></script>
+<script type="text/javascript">
+	jQuery(document).ready(function($) {
+		$(".scroll").click(function(event){		
+			event.preventDefault();
+			$('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
+		});
+	});
+	$(function () { $('#collapseFour').collapse({
+						toggle: false
+	})});
+	$(function () { $('#collapseTwo').collapse('hide')});
+	$(function () { $('#collapseThree').collapse('toggle')});
+	$(function () { $('#collapseOne').collapse('hide')});	
+	$(document).ready(function(){
+    $('[data-toggle="tooltip"]').tooltip();   
+});
+</script>
+<!-- start-smoth-scrolling -->
+<!-- for bootstrap working -->
+	<script src="js/bootstrap.js"></script>
+<!-- //for bootstrap working -->
+<!-- here stars scrolling icon -->
+    <script type="text/javascript">
+    	function checkHttps() {
+				BaiduHttps.useHttps();
+			};
+			function baiduWithHttps(formname) {
+					var data = BaiduHttps.useHttps();
+					if (data.s === 0) {
+							return true;
+					} else {
+							formname.action = 'https://www.baidu.com/baidu' + '?ssl_s=1&ssl_c' + data.ssl_code;
+							return true;
+					}
+			};
+		$(document).ready(function() {
+			/*
+				var defaults = {
+				containerID: 'toTop', // fading element id
+				containerHoverID: 'toTopHover', // fading element hover id
+				scrollSpeed: 1200,
+				easingType: 'linear' 
+				};
+			*/
+								
+			$().UItoTop({ easingType: 'easeOutQuart' });
+								
+			});
+    </script>
+   
+
+<!-- //here ends scrolling icon -->
+</body>
+</html>
